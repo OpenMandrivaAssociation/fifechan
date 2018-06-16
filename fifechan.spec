@@ -113,7 +113,9 @@ Requires:	%{devname} = %{EVRD}
 Requires:	%{slibname} = %{EVRD}
 Provides:	fifechan-sdl-devel = %{EVRD}
 BuildRequires:	pkgconfig(sdl2)
+BuildRequires:	pkgconfig(SDL2_image)
 Requires:	pkgconfig(sdl2)
+Requires:	pkgconfig(SDL2_image)
 
 %description -n %{sdevname}
 Development files for %{name}'s SDL backend
