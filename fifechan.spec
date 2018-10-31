@@ -12,7 +12,7 @@
 
 Name:		fifechan
 Version:	0.1.4
-Release:	1
+Release:	2
 Source0:	https://github.com/fifengine/fifechan/archive/%{version}.tar.gz
 Summary:	C++ GUI library designed for games
 URL:		http://fifengine.github.io/fifechan/
