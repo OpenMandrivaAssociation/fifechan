@@ -127,6 +127,8 @@ Development files for %{name}'s SDL backend
 %build
 %cmake \
 	-Dbuild-library:BOOL=ON \
+	-DENABLE_ALLEGRO:BOOL=ON \
+	-DENABLE_IRRLICHT:BOOL=ON \
 	-G Ninja
 %ninja
 
