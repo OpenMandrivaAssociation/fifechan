@@ -13,7 +13,7 @@
 Name:		fifechan
 Version:	0.1.5
 Release:	1
-Source0:	https://github.com/fifengine/fifechan/archive/%{version}.tar.gz
+Source0:	https://github.com/fifengine/fifechan/archive/%{name}-%{version}.tar.gz
 Summary:	C++ GUI library designed for games
 URL:		http://fifengine.github.io/fifechan/
 License:	LGPL
