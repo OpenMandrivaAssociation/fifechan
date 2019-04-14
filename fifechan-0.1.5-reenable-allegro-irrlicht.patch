@@ -1,7 +1,7 @@
 Index: CMakeLists.txt
 ===================================================================
 --- CMakeLists.txt
-+++ CMakeLists.txt	2019-04-14 15:57:36.815564007 +0200
++++ CMakeLists.txt	2019-04-14 16:54:18.704314743 +0200
 @@ -23,18 +23,18 @@
  
  OPTION(BUILD_FIFECHAN_SHARED            "Build the Fifechan core library as a shared library"                ON)
@@ -17,8 +17,7 @@ Index: CMakeLists.txt
 +OPTION(BUILD_FIFECHAN_IRRLICHT_SHARED   "Build the Fifechan Irrlicht extension library as a shared library"  ON)
  
  OPTION(ENABLE_OPENGL                    "Enable the Fifechan OpenGL extension"                               ON)
--OPTION(ENABLE_OPENGL_CONTRIB            "Enable the Fifechan OpenGL contrib extension (freetype, oglft)"     OFF)
-+OPTION(ENABLE_OPENGL_CONTRIB            "Enable the Fifechan OpenGL contrib extension (freetype, oglft)"     ON)
+ OPTION(ENABLE_OPENGL_CONTRIB            "Enable the Fifechan OpenGL contrib extension (freetype, oglft)"     OFF)
  OPTION(BUILD_FIFECHAN_OPENGL_SHARED     "Build the Fifechan OpenGL extension library as a shared library"    ON)
  
  OPTION(ENABLE_SDL                       "Enable the Fifechan SDL extension"                                  ON)
