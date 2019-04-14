@@ -159,6 +159,7 @@ Development files for %{name}'s SDL backend
 %dir %{_includedir}/fifechan
 %{_includedir}/fifechan.hpp
 %{_includedir}/fifechan/*.hpp
+%{_includedir}/fifechan/util/fcn_math.hpp
 %dir %{_includedir}/fifechan/contrib
 %{_includedir}/fifechan/widgets
 
