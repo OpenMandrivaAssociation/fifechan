@@ -1,0 +1,28 @@
+Index: CMakeLists.txt
+===================================================================
+--- CMakeLists.txt
++++ CMakeLists.txt	2019-04-14 16:54:18.704314743 +0200
+@@ -23,18 +23,18 @@
+ 
+ OPTION(BUILD_FIFECHAN_SHARED            "Build the Fifechan core library as a shared library"                ON)
+ 
+-OPTION(ENABLE_ALLEGRO                   "Enable the Fifechan Allegro extension"                              OFF)
+-OPTION(BUILD_FIFECHAN_ALLEGRO_SHARED    "Build the Fifechan Allegro extension library as a shared library"   OFF)
++OPTION(ENABLE_ALLEGRO                   "Enable the Fifechan Allegro extension"                              ON)
++OPTION(BUILD_FIFECHAN_ALLEGRO_SHARED    "Build the Fifechan Allegro extension library as a shared library"   ON)
+ 
+-OPTION(ENABLE_IRRLICHT                  "Enable the Fifechan Irrlicht extension"                             OFF)
+-OPTION(BUILD_FIFECHAN_IRRLICHT_SHARED   "Build the Fifechan Irrlicht extension library as a shared library"  OFF)
++OPTION(ENABLE_IRRLICHT                  "Enable the Fifechan Irrlicht extension"                             ON)
++OPTION(BUILD_FIFECHAN_IRRLICHT_SHARED   "Build the Fifechan Irrlicht extension library as a shared library"  ON)
+ 
+ OPTION(ENABLE_OPENGL                    "Enable the Fifechan OpenGL extension"                               ON)
+ OPTION(ENABLE_OPENGL_CONTRIB            "Enable the Fifechan OpenGL contrib extension (freetype, oglft)"     OFF)
+ OPTION(BUILD_FIFECHAN_OPENGL_SHARED     "Build the Fifechan OpenGL extension library as a shared library"    ON)
+ 
+ OPTION(ENABLE_SDL                       "Enable the Fifechan SDL extension"                                  ON)
+-OPTION(ENABLE_SDL_CONTRIB               "Enable the Fifechan SDL contrib extension (SDL2_ttf)"               OFF)
++OPTION(ENABLE_SDL_CONTRIB               "Enable the Fifechan SDL contrib extension (SDL2_ttf)"               ON)
+ OPTION(BUILD_FIFECHAN_SDL_SHARED        "Build the Fifechan SDL extension library as a shared library"       ON)
+ 
+ #------------------------------------------------------------------------------

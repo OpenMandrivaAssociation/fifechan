@@ -11,15 +11,19 @@
 %define sdevname %mklibname fifechan_sdl -d
 
 Name:		fifechan
-Version:	0.1.4
-Release:	2
-Source0:	https://github.com/fifengine/fifechan/archive/%{version}.tar.gz
+Version:	0.1.5
+Release:	1
+Source0:	https://github.com/fifengine/fifechan/archive/%{name}-%{version}.tar.gz
+#Bring back all backend library like allegro or irrlicght disabled in upstream in 0.1.5 (penguin)
+Patch0:		fifechan-0.1.5-reenable-allegro-irrlicht.patch
 Summary:	C++ GUI library designed for games
 URL:		http://fifengine.github.io/fifechan/
 License:	LGPL
 Group:		System/Libraries
 BuildRequires:	cmake ninja
 BuildRequires:	pkgconfig(python2)
+
+
 
 %description
 Fifechan is a C++ GUI library designed for games. It comes with a standard
@@ -114,15 +118,17 @@ Requires:	%{slibname} = %{EVRD}
 Provides:	fifechan-sdl-devel = %{EVRD}
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(SDL2_image)
+BuildRequires:	pkgconfig(SDL2_ttf)
 Requires:	pkgconfig(sdl2)
 Requires:	pkgconfig(SDL2_image)
+Requires:	pkgconfig(SDL2_ttf)
 
 %description -n %{sdevname}
 Development files for %{name}'s SDL backend
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p0
 
 %build
 %cmake \
@@ -153,6 +159,7 @@ Development files for %{name}'s SDL backend
 %dir %{_includedir}/fifechan
 %{_includedir}/fifechan.hpp
 %{_includedir}/fifechan/*.hpp
+%{_includedir}/fifechan/util/fcn_math.hpp
 %dir %{_includedir}/fifechan/contrib
 %{_includedir}/fifechan/widgets
 
