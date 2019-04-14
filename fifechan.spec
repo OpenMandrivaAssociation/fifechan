@@ -23,6 +23,8 @@ Group:		System/Libraries
 BuildRequires:	cmake ninja
 BuildRequires:	pkgconfig(python2)
 
+
+
 %description
 Fifechan is a C++ GUI library designed for games. It comes with a standard
 set of 'widgets' and can use several different objects for displaying
@@ -116,8 +118,10 @@ Requires:	%{slibname} = %{EVRD}
 Provides:	fifechan-sdl-devel = %{EVRD}
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(SDL2_image)
+BuildRequires:	pkgconfig(SDL2_ttf)
 Requires:	pkgconfig(sdl2)
 Requires:	pkgconfig(SDL2_image)
+Requires:	pkgconfig(SDL2_ttf)
 
 %description -n %{sdevname}
 Development files for %{name}'s SDL backend
