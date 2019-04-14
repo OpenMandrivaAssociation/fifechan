@@ -143,7 +143,7 @@ Development files for %{name}'s SDL backend
 %{_libdir}/libfifechan.so.%{major}*
 
 %files -n %{alibname}
-%%{_libdir}/libfifechan_allegro.so.%{major}*
+%{_libdir}/libfifechan_allegro.so.%{major}*
 
 %files -n %{ilibname}
 %{_libdir}/libfifechan_irrlicht.so.%{major}*
