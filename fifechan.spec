@@ -21,7 +21,7 @@ URL:		http://fifengine.github.io/fifechan/
 License:	LGPL
 Group:		System/Libraries
 BuildRequires:	cmake ninja
-BuildRequires:	pkgconfig(python2)
+BuildRequires:	pkgconfig(python3)
 
 
 
