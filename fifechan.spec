@@ -12,7 +12,7 @@
 
 Name:		fifechan
 Version:	0.1.5
-Release:	2
+Release:	3
 Source0:	https://github.com/fifengine/fifechan/archive/%{name}-%{version}.tar.gz
 #Bring back all backend library like allegro or irrlicght disabled in upstream in 0.1.5 (penguin)
 Patch0:		fifechan-0.1.5-reenable-allegro-irrlicht.patch
@@ -22,8 +22,6 @@ License:	LGPL
 Group:		System/Libraries
 BuildRequires:	cmake ninja
 BuildRequires:	pkgconfig(python3)
-
-
 
 %description
 Fifechan is a C++ GUI library designed for games. It comes with a standard
