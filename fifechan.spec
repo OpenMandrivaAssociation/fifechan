@@ -12,7 +12,7 @@
 
 Name:		fifechan
 Version:	0.1.5
-Release:	3
+Release:	4
 Source0:	https://github.com/fifengine/fifechan/archive/%{name}-%{version}.tar.gz
 #Bring back all backend library like allegro or irrlicght disabled in upstream in 0.1.5 (penguin)
 Patch0:		fifechan-0.1.5-reenable-allegro-irrlicht.patch
