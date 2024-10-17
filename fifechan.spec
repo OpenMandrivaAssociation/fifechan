@@ -17,7 +17,7 @@ Source0:	https://github.com/fifengine/fifechan/archive/%{name}-%{version}.tar.gz
 #Bring back all backend library like allegro or irrlicght disabled in upstream in 0.1.5 (penguin)
 Patch0:		fifechan-0.1.5-reenable-allegro-irrlicht.patch
 Summary:	C++ GUI library designed for games
-URL:		http://fifengine.github.io/fifechan/
+URL:		https://fifengine.github.io/fifechan/
 License:	LGPL
 Group:		System/Libraries
 BuildRequires:	cmake ninja
